@@ -1,6 +1,6 @@
 # Fedora 28 using root ZFS, LUKS, UEFI, and GPT disks
 
-Do you like Fedora, but want to use ZFS as your root filesystem? Do you want to encrypt that ZFS filesystem with LUKS? Do you want to also boot your system using UEFI and GPT disks? You can combine multiple guides that already exist and guess your way to completion...or you can follow this guide where I've already done all those things for you. If you're of the TL;DR sort, feel free to skip straight to the (Installation)[#installation] section.
+Do you like Fedora, but want to use ZFS as your root filesystem? Do you want to encrypt that ZFS filesystem with LUKS? Do you want to also boot your system using UEFI and GPT disks? You can combine multiple guides that already exist and guess your way to completion...or you can follow this guide where I've already done all those things for you. If you're of the TL;DR sort, feel free to skip straight to the [Installation](#installation) section.
 
 ## Assumptions
 This guide will:
@@ -10,7 +10,7 @@ This guide will:
   - By extension, this guide will use a system with a BIOS that support UEFI booting
   - Yes, "legacy" booting is still very possible but it also seems very well-covered by other guides.
 - Use Fedora 28. Older versions aren't covered, and newer versions could always break things.
-- Use ZFS packages from (ZFS On Linux)[https://zfsonlinux.org/], not the FUSE packages that come with Fedora
+- Use ZFS packages from [ZFS On Linux](https://zfsonlinux.org/), not the FUSE packages that come with Fedora
 - Use an unencrypted `/boot` partition (it is theoretically possible to encrypt "/boot", but it's outside the scope of this guide)
 - Use only a single hard drive for simplicity, even though ZFS is most beneficial when used across several hard drives
 - NOT require extra flash drives or other removable media, just the Fedora 28 install disc
