@@ -7,11 +7,11 @@ This guide will:
 - Use Linux. Hopefully that's obvious, but in case you wondered this guide won't be about installing software on your favorite headgear.
 - Use GPT partition tables. That seems pretty specific, but GPT does not have as much coverage in other guides as MBR tables do.
 - Use UEFI to boot the system
-  - By extension, this guide will use a system with a BIOS that support UEFI booting
+  - By extension, this guide will use a system with a BIOS that supports UEFI booting
   - Yes, "legacy" booting is still very possible but it also seems very well-covered by other guides.
 - Use Fedora 28. Older versions aren't covered, and newer versions could always break things.
 - Use ZFS packages from [ZFS On Linux](https://zfsonlinux.org/), not the FUSE packages that come with Fedora
-- Use an unencrypted `/boot` partition (it is theoretically possible to encrypt "/boot", but it's outside the scope of this guide)
+- Use an unencrypted `/boot` partition (it is theoretically possible to encrypt `/boot`, but it's outside the scope of this guide)
 - Use only a single hard drive for simplicity, even though ZFS is most beneficial when used across several hard drives
 - NOT require extra flash drives or other removable media, just the Fedora 28 install disc
 - NOT specifically ask you to unlock your drives after every reboot. If you see the LUKS prompt, enter your passphrase and carry on
