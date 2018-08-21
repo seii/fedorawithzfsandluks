@@ -4,7 +4,7 @@ Do you like Fedora, but want to use ZFS as your root filesystem? Do you want to 
 
 ## Assumptions
 This guide will:
-- Use Linu1. Hopefully that's obvious, but in case you wondered this guide won't be about installing software on your favorite headgear.
+- Use Linux. Hopefully that's obvious, but in case you wondered this guide won't be about installing software on your favorite headgear.
 - Use GPT partition tables. That seems pretty specific, but GPT does not have as much coverage in other guides as MBR tables do.
 - Use UEFI to boot the system
   - By extension, this guide will use a system with a BIOS that support UEFI booting
