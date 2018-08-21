@@ -13,9 +13,9 @@ This guide will:
 - Use ZFS packages from [ZFS On Linux](https://zfsonlinux.org/), not the FUSE packages that come with Fedora
 - Use an unencrypted `/boot` partition (it is theoretically possible to encrypt `/boot`, but it's outside the scope of this guide)
 - Use only a single hard drive for simplicity, even though ZFS is most beneficial when used across several hard drives
-- NOT require extra flash drives or other removable media, just the Fedora 28 install disc
+- NOT require extra flash drives or other removable media, just the Fedora 28 install media
 - NOT specifically ask you to unlock your drives after every reboot. If you see the LUKS prompt, enter your passphrase and carry on
-- Use ZFS On Linux's automatic `ashift` detection rather than specifying a value. The `ashift` value really depends upon whether your disks are "Advanced Format" (4k sector size) or not. If you care to really check on this, a link to trying to find whether your disks are "Advanced Format" can be found at the end of this guide
+- Use ZFS On Linux's automatic `ashift` detection rather than specifying a value. The `ashift` value most commonly depends upon whether your disks are "Advanced Format" (4k sector size) or not. If you care to really check on this, a link to trying to find whether your disks are "Advanced Format" can be found at the end of this guide
 
 ## Conventions
 - `/dev/sdx` will be the notation used for the hard drive's path. Replace it with your actual path wherever it appears. (The actual path convention for your system will differ depending on OS, distribution, hardware, and other potential variables.)
