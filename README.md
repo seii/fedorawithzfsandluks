@@ -265,16 +265,16 @@ The following partition layout is what we will setup in the beginning of this gu
 1. Update the initramfs by running the command ``dracut -fv --kver `uname -r` ``
 1. **[OPTIONAL]** Limit ARC memory usage to half of your RAM (in bytes, must be a power of 2) by adding the below line to the file `/etc/modprobe.d/zfs.conf`
 
-```
-options zfs zfs_arc_max=8589934592   # This is roughly 8GB
-```
+    ```
+    options zfs zfs_arc_max=8589934592   # This is roughly 8GB
+    ```
 
 1. Update the initramfs by running the command ``dracut -fv --kver `uname -r` ``
 1. **[OPTIONAL]** ZFS stresses the use of ECC memory, as it's intended to prevent and mitigate corruption in every possible way it can. Since most systems (and this guide's) don't have ECC RAM, it's possible to set an unsupported flag that does extra checksums on buffers before writing or somesuch by editing `/etc/modprobe.d/zfs.conf` to add the following line
 
-```
-options zfs zfs_flags=0x10
-```
+    ```
+    options zfs zfs_flags=0x10
+    ```
 
 1. Update the initramfs by running the command ``dracut -fv --kver `uname -r` ``
 1. Verify by running the command `cat /sys/module/zfs/parameters/zfs_flags`
