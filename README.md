@@ -42,6 +42,7 @@ The following partition layout is what we will setup in the beginning of this gu
    - **Example:** `vmlinuz ... quiet inst.gpt`
    - This is just a precaution to force the use of GPT partition tables, as the Fedora live media doesn't automatically use GPT tables on disks smaller than a certain size
 1. Use the keyboard shortcut `Ctrl-x` to start the edited boot entry
+1. When asked whether you wish to try Fedora or install to the hard drive, select "Try"
 1. Open a terminal in the Fedora desktop and use `sudo -i` to become the root user. (From here on, it's assumed you are running all commands as `root` unless otherwise specified.)
 1. Use the partition program "parted" to delete existing partitions and initialize a new GPT partition table by running the command `parted /dev/sdx mklabel gpt`
 1. Use your favorite partition utility (as long as it supports GPT partition tables) to create four partitions:
