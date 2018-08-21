@@ -283,7 +283,7 @@ options zfs zfs_flags=0x10
 That's it! You should now have a stable ZFS system on your UEFI computer that also uses LUKS encryption on all GPT partitions except `/boot` and `/boot/efi`. It's entirely possible to create new pseudo-partitions within that same LUKS encryption by utilizing ZFS datasets, as well. Nifty!
 
 
-## Extra Tip - ZFS Snapshots To Test New Things:
+## Extra Tip - ZFS Snapshots To Test New Things
 From the csparks guide linked below comes the following suggested procedure for attempting new package installs in Fedora in a way that allows easy rollbacks:
 1. `zfs snapshot $POOL_NAME/ROOT/fedora@somename`
 1. (things go boom)
